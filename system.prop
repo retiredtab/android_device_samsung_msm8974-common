@@ -34,5 +34,8 @@ persist.rild.nitz_short_ons_1=""
 persist.rild.nitz_short_ons_2=""
 persist.rild.nitz_short_ons_3=""
 
+# System
+persist.sys.binary_xml=false
+
 # Time
 persist.timed.enable=true
