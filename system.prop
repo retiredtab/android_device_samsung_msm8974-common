@@ -20,6 +20,9 @@ debug.hwui.use_buffer_age=false
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 
+# Graphics
+debug.renderengine.backend=threaded
+
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
 
