@@ -60,6 +60,7 @@ endif
 # Display
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
+TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
