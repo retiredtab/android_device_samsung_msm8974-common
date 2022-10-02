@@ -40,6 +40,7 @@ persist.rild.nitz_short_ons_3=""
 
 # System
 persist.sys.binary_xml=false
+ro.vndk.version=current
 
 # Time
 persist.timed.enable=true
