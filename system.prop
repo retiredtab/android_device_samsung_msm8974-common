@@ -44,3 +44,6 @@ ro.vndk.version=current
 
 # Time
 persist.timed.enable=true
+
+# Zygote
+zygote.critical_window.minute=10
