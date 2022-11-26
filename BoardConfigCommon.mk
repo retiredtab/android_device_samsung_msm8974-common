@@ -84,6 +84,9 @@ TARGET_HAS_MEMFD_BACKPORT := true
 # SELinux
 include device/samsung/msm8974-common/sepolicy/sepolicy.mk
 
+# SOONG
+PRODUCT_SOONG_NAMESPACES += hardware/samsung
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
