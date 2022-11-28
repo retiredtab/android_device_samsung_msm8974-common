@@ -1,2 +1,10 @@
+binder_call(init, servicemanager)
+binder_call(init, system_server)
+
+allow init init:capability2 { block_suspend };
 allow init efs_file:dir mounton;
+allow init hal_health_service:service_manager { add };
 allow init proc_last_kmsg:file { r_file_perms setattr };
+allow init init:netlink_kobject_uevent_socket { create setopt getopt bind read };
+allow init sysfs:file w_file_perms;
+allow init sysfs_batteryinfo:file { open };

@@ -6,6 +6,7 @@ type proc_last_kmsg, fs_type, proc_type;
 type sysfs_battery, sysfs_type, fs_type;
 type sysfs_battery_writable, sysfs_type, fs_type;
 type sysfs_camera, fs_type, sysfs_type;
+type sysfs_hal_health_service, sysfs_type, fs_type;
 type sysfs_hal_pwr, fs_type, sysfs_type;
 type sysfs_iio, fs_type, sysfs_type;
 type sysfs_input, fs_type, sysfs_type;
@@ -24,5 +25,6 @@ type sysfs_usb_otg, fs_type, sysfs_type;
 type sysfs_wifi_writeable, fs_type, sysfs_type;
 
 type bt_fw_file, file_type;
+type netlink_kobject_uevent_socket, file_type;
 type nfc_fw_file, file_type;
 type wifi_efs_file, file_type;
