@@ -48,28 +48,10 @@ BOARD_BATTERY_DEVICE_NAME := "battery"
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
 BOARD_CHARGING_CMDLINE_VALUE := "true"
 
-# Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= false
-    WITH_DEXPREOPT := true
-  endif
-endif
-
 # Display
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
-
-# Shader cache config options
-# Maximum size of the  GLES Shaders that can be cached for reuse.
-# Increase the size if shaders of size greater than 12KB are used.
-MAX_EGL_CACHE_KEY_SIZE := 12*1024
-
-# Maximum GLES shader cache size for each app to store the compiled shader
-# binaries. Decrease the size if RAM or Flash Storage size is a limitation
-# of the device.
-MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := device/samsung/msm8974-common/config.fs
@@ -98,9 +80,6 @@ TARGET_SYSTEM_PROP += device/samsung/msm8974-common/system.prop
 
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS += device/samsung/msm8974-common
-
-# Time services
-BOARD_USES_QC_TIME_SERVICES := true
 
 # inherit from the proprietary version
 include vendor/samsung/msm8974-common/BoardConfigVendor.mk
