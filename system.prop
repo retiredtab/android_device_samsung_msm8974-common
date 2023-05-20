@@ -16,6 +16,7 @@ ro.qualcomm.cabl=1
 debug.hwui.use_buffer_age=false
 debug.sf.disable_client_composition_cache=1
 debug.sf.predict_hwc_composition_strategy=0
+debug.sf.enable_transaction_tracing=false
 debug.sf.latch_unsignaled=1
 
 # Graphics
