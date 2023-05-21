@@ -1,3 +1,6 @@
+## Adoptable Storage
+ro.crypto.volume.options=aes-256-xts
+
 # Audio
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=false
