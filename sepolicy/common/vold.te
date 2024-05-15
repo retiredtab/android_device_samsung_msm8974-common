@@ -14,3 +14,5 @@ allow vold {
 allowxperm vold vold_device:blk_file ioctl { BLKDISCARD BLKGETSIZE };
 
 dontaudit vold hal_bootctl_hwservice:hwservice_manager find;
+
+allow vold vendor_file:file r_file_perms;

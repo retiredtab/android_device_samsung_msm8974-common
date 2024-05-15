@@ -1,3 +1,9 @@
+#============= system_server ==============
+allow system_server app_zygote:process getpgid;
+allow system_server sysfs:file r_file_perms;
+allow system_server sysfs_vibrator:file r_file_perms;
+allow system_server vendor_file:file rx_file_perms;
+
 allow system_server {
     efs_file
     mpctl_data_file
