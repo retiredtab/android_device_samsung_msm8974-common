@@ -218,7 +218,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+    android.hardware.usb@1.3-service.basic
 
 # VNDK
 # Patch/hexedit DRM to look for older version of libprotobuf-cpp-lite.so
