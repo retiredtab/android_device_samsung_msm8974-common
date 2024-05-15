@@ -27,7 +27,7 @@ debug.renderengine.backend=threaded
 
 # System
 persist.sys.binary_xml=false
-ro.vndk.version=current
+#ro.vndk.version=current
 
 # Zygote
 zygote.critical_window.minute=10
