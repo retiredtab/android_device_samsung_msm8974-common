@@ -36,6 +36,7 @@ LOCAL_LDFLAGS += -Wl,--export-dynamic
 
 ## Includes
 LOCAL_C_INCLUDES:= \
+    hardware/libhardware/include \
     $(LOCAL_PATH)/platform_lib_abstractions
 
 LOCAL_MODULE := libgps.utils
@@ -47,5 +48,8 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libgps.utils_headers
+## Includes
+LOCAL_C_INCLUDES:= \
+    hardware/libhardware/include \
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH) $(LOCAL_PATH)/platform_lib_abstractions
 include $(BUILD_HEADER_LIBRARY)

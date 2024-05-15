@@ -38,6 +38,9 @@ LOCAL_CFLAGS += \
      -Wno-unused-parameter
 
 LOCAL_C_INCLUDES:= \
+    hardware/libhardware/include \
+    device/samsung/msm8974-common/gps/utils \
+    device/samsung/msm8974-common/gps/utils/platform_lib_abstractions \
     $(TARGET_OUT_HEADERS)/gps.utils \
     $(TARGET_OUT_HEADERS)/libloc_core \
     $(LOCAL_PATH) \
@@ -83,7 +86,10 @@ LOCAL_CFLAGS += \
 LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
     $(TARGET_OUT_HEADERS)/libloc_core \
-    $(TARGET_OUT_HEADERS)/libflp
+    $(TARGET_OUT_HEADERS)/libflp \
+    hardware/libhardware/include \
+    device/samsung/msm8974-common/gps/utils \
+    device/samsung/msm8974-common/gps/utils/platform_lib_abstractions
 
 LOCAL_MODULE_RELATIVE_PATH := hw
 

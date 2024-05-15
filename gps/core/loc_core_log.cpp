@@ -32,7 +32,7 @@
 
 #include <loc_log.h>
 #include <log_util.h>
-#include <loc_core_log.h>
+#include "loc_core_log.h"
 
 void LocPosMode::logv() const
 {
