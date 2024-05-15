@@ -97,7 +97,8 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service
+    android.hardware.drm@1.0-service \
+    android.hardware.drm-service.clearkey
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -123,6 +124,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
     android.hardware.health-service.samsung-recovery
+
+#Hidl
+# CANNOT LINK EXECUTABLE "/vendor/bin/hw/android.hardware.drm@1.1-service.widevine":
+# library "libhidltransport.so" not found: needed by main executable
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhidltransport
 
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
@@ -211,6 +219,11 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
+
+# VNDK
+# Patch/hexedit DRM to look for older version of libprotobuf-cpp-lite.so
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-v29-lite.so
 
 # VNDK
 PRODUCT_COPY_FILES += \
