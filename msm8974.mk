@@ -120,6 +120,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \

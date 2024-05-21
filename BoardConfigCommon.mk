@@ -56,6 +56,12 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := device/samsung/msm8974-common/config.fs
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/batt_slate_mode
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # HIDL
 DEVICE_MANIFEST_FILE := device/samsung/msm8974-common/manifest.xml
 DEVICE_MATRIX_FILE := device/samsung/msm8974-common/compatibility_matrix.xml
