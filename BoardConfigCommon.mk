@@ -64,7 +64,7 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # HIDL
 DEVICE_MANIFEST_FILE := device/samsung/msm8974-common/manifest.xml
-DEVICE_MATRIX_FILE := device/samsung/msm8974-common/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # Legacy memfd
 TARGET_HAS_MEMFD_BACKPORT := true
