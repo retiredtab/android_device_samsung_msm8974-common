@@ -217,8 +217,12 @@ PRODUCT_PACKAGES += \
     TimeKeep
 
 # Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
+# continually crashes in QPR3
+#E HidlServiceManagement: Service vendor.lineage.touch@1.0::IKeyDisabler/default must be in VINTF manifest in order to register/get.
+#E vendor.lineage.touch@1.0-service.samsung: Could not register service for Touch HAL KeyDisabler Iface (-2147483648)
+#E vendor.lineage.touch@1.0-service.samsung: Touch HAL service is shutting down.
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch@1.0-service.samsung
 
 # Trust HAL
 #PRODUCT_PACKAGES += \
