@@ -84,6 +84,9 @@ PRODUCT_PACKAGES += \
     memtrack.msm8974
 
 # Camera
+PRODUCT_NO_CAMERA := true
+
+# Camera
 #PRODUCT_PACKAGES += \
 #    android.hardware.camera.provider@2.4-impl \
 #    camera.device@1.0-impl \
